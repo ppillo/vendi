@@ -499,3 +499,60 @@ h6 {
     height: 50px;
   }
 }
+
+/* About Page Styles */
+.about-header-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/header-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.about-content-section {
+  background-color: #fff;
+}
+
+.about-content-section img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-card {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card i {
+  color: var(--brick-color);
+}
+
+/* Navigation Styles */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--brick-color);
+}

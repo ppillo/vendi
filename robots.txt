@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /assets/images/
+Disallow: /assets/images/raw/
+Disallow: /assets/images/thumbnails/
+
+Sitemap: https://vendibricklaying.com.au/sitemap.xml 

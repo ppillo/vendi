@@ -179,7 +179,6 @@ h6 {
 }
 
 .client-logo {
-  background-color: #f8f9fa;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -422,15 +421,17 @@ h6 {
 }
 
 .testimonial-card {
-  background-color: #f8f9fa;
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 15px;
   padding: 2rem;
-  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .testimonial-card:hover {
   transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .testimonial-content {
@@ -438,19 +439,21 @@ h6 {
   margin-bottom: 2rem;
 }
 
-.testimonial-content i {
+.testimonial-content i.bi-quote {
+  color: var(--brick-color);
   font-size: 2rem;
-  color: #ff6b00;
-  margin-bottom: 1rem;
-  display: block;
+  opacity: 0.2;
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
 .testimonial-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-style: italic;
   color: #666;
   margin: 0;
-  font-style: italic;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-author {
@@ -459,20 +462,22 @@ h6 {
   gap: 1rem;
 }
 
-.testimonial-author img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border: 3px solid #ff6b00;
+.testimonial-author .rating {
+  color: #ffd700;
+  font-size: 0.9rem;
 }
 
-.author-info h4 {
+.testimonial-author .rating i {
+  margin-right: -2px;
+}
+
+.testimonial-author .author-info h4 {
   margin: 0;
   font-size: 1.1rem;
   color: #333;
 }
 
-.author-info p {
+.testimonial-author .author-info p {
   margin: 0;
   font-size: 0.9rem;
   color: #666;

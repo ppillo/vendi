@@ -307,7 +307,26 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), #f8f9fa), url('assets/images/bg-map.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-section h2,
+.contact-section p {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-section .btn-brick {
+  position: relative;
+  z-index: 2;
 }
 
 .btn-brick {
@@ -315,7 +334,6 @@ h6 {
   color: white;
   border: none;
   padding: 1rem 2.5rem;
-
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -357,7 +375,6 @@ h6 {
 /* Footer Section */
 .footer-section {
   background-color: #f8f9fa;
-  border-top: 1px solid #dee2e6;
 }
 
 .footer-contact h4 {

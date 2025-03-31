@@ -180,7 +180,6 @@ h6 {
 
 .client-logo {
   background-color: #f8f9fa;
-  padding: 2rem;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -192,6 +191,7 @@ h6 {
 .client-logo:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .client-logo img {

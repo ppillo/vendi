@@ -1,8 +1,26 @@
 User-agent: *
 Allow: /
+Allow: /about.html
 Allow: /assets/
 Allow: /assets/images/
+Allow: /styles.css
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Prevent crawling of raw images and thumbnails
 Disallow: /assets/images/raw/
 Disallow: /assets/images/thumbnails/
 
-Sitemap: https://vendibricklaying.com.au/sitemap.xml 
+# Prevent crawling of system files
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /error_log
+Disallow: /access_log
+
+# Sitemap location
+Sitemap: https://vendibricklaying.com.au/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10 

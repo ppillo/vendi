@@ -192,10 +192,25 @@ h6 {
 /* Clients & Partners Section */
 .clients-section {
   background-color: #ffffff;
+  overflow: hidden;
+}
+
+.clients-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(250px * 16);
+  /* Width for 16 logos (8 original + 8 duplicated) */
 }
 
 .client-logo {
-  border-radius: 8px;
+  flex: 0 0 250px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,18 +236,134 @@ h6 {
   filter: grayscale(0%);
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 8));
+    /* Move by width of 8 logos */
+  }
+}
+
+/* Pause animation on hover */
+.clients-carousel:hover .clients-track {
+  animation-play-state: paused;
+}
+
 /* Responsive adjustments for clients section */
 @media (max-width: 991.98px) {
   .client-logo {
     height: 120px;
-    padding: 1.5rem;
+    flex: 0 0 200px;
+  }
+
+  .clients-track {
+    width: calc(200px * 16);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-200px * 8));
+    }
   }
 }
 
 @media (max-width: 767.98px) {
   .client-logo {
     height: 100px;
-    padding: 1rem;
+    flex: 0 0 150px;
+  }
+
+  .clients-track {
+    width: calc(150px * 16);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-150px * 8));
+    }
+  }
+}
+
+/* Parallax Section */
+.parallax-section {
+  position: relative;
+  height: 400px;
+  background: url('assets/images/bg-paralex.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.parallax-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.parallax-content h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.parallax-content .lead {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for parallax section */
+@media (max-width: 991.98px) {
+  .parallax-section {
+    height: 300px;
+  }
+
+  .parallax-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .parallax-content .lead {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .parallax-section {
+    height: 250px;
+  }
+
+  .parallax-content h2 {
+    font-size: 2rem;
+  }
+
+  .parallax-content .lead {
+    font-size: 1.1rem;
   }
 }
 

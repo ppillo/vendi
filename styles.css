@@ -863,7 +863,7 @@ h6 {
 
 /* About Page Styles */
 .about-header-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/header-bg.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/bg/main.jpg');
   background-size: cover;
   background-position: center;
   min-height: 50vh;

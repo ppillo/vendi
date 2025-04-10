@@ -119,11 +119,14 @@
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKYWXN4DM1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  // Only run Google Analytics script if not on localhost
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-SKYWXN4DM1');
+    gtag('config', 'G-SKYWXN4DM1');
+  }
 </script>
 
 <body>
@@ -177,7 +180,7 @@
     <!-- Panel 6: Video Panel -->
     <section class="panel panel-6">
       <video class="panel-video" autoplay muted loop playsinline>
-        <source src="assets/images/video-gallery.mp4" type="video/mp4">
+        <source src="assets/images/gallery/video_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>

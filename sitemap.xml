@@ -30,4 +30,39 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Added Gallery Page -->
+  <url>
+    <loc>https://vendibricklaying.com.au/gallery.html</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Added Gallery 2 Page -->
+  <url>
+    <loc>https://vendibricklaying.com.au/gallery2.html</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Added Project 1 Page -->
+  <url>
+    <loc>https://vendibricklaying.com.au/project_1.html</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Added Project 2 Page -->
+  <url>
+    <loc>https://vendibricklaying.com.au/project_2.html</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Added Project 3 Page -->
+  <url>
+    <loc>https://vendibricklaying.com.au/project_3.html</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset> 

@@ -14,6 +14,7 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 40px;
 }
 
 section {
@@ -903,7 +904,7 @@ h6 {
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 50px;
 }
 
 .nav-link {
@@ -916,4 +917,34 @@ h6 {
 .nav-link:hover,
 .nav-link.active {
   color: var(--brick-color);
+}
+
+/* Sticky Top Bar Styles */
+.sticky-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1030;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-top-bar .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sticky-top-bar a {
+  color: #ffc107;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+.sticky-top-bar a:hover {
+  color: #fff;
 }

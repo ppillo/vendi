@@ -134,14 +134,24 @@
 </script>
 
 <body>
+  <!-- Sticky Top Bar -->
+  <div class="sticky-top-bar">
+    <div class="container">
+      <span>Need professional bricklaying?</span>
+      <a onclick="ga('send', 'event', 'Call Us', 'Click', 'Sticky Top Bar');" href="tel:+61411797280">Call Us 0411 797
+        280</a> or <a onclick="ga('send', 'event', 'Contact Us', 'Click', 'Sticky Top Bar');" href="#contact">Contact
+        Us</a>
+    </div>
+  </div>
+  <!-- End Sticky Top Bar -->
   <!-- Header Section -->
   <header class="header-section">
     <div class="container">
       <div class="row min-vh-100 align-items-center">
         <div class="col-lg-6">
-          <p class="text-uppercase text-white">Vendi Bricklaying</p>
-          <h1 class="display-4 text-white mb-4" data-aos="fade-right">Experienced in all aspects of brick and block
-            laying</h1>
+          <h1 class="text-uppercase text-white">Vendi Bricklaying</h1>
+          <h2 class="display-5 text-white mb-4" data-aos="fade-right">Experienced in all aspects of brick and block
+            laying</h2>
           <p class="lead text-white mb-4" data-aos="fade-right" data-aos-delay="100">Work proud & quality focused</p>
           <a href="#gallery" class="btn btn-brick btn-lg" data-aos="fade-right" data-aos-delay="200">Explore our
             projects</a>
@@ -234,7 +244,7 @@
       </div>
 
       <div class="text-center mt-5">
-        <a href="gallery.html" class="btn btn-outline-brick" id="visit-gallery">
+        <a href="gallery/" class="btn btn-outline-brick" id="visit-gallery">
           <span>Visit our gallery</span>
           <i class="bi bi-chevron-right ms-2"></i>
         </a>
@@ -565,7 +575,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer-section py-5">
+  <footer id="contact" class="footer-section py-5">
     <div class="container">
       <div class="row align-items-center">
         <!-- Contact Information -->

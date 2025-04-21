@@ -138,9 +138,11 @@
   <div class="sticky-top-bar">
     <div class="container">
       <span>Need professional bricklaying?</span>
-      <a onclick="ga('send', 'event', 'Call Us', 'Click', 'Sticky Top Bar');" href="tel:+61411797280">Call Us 0411 797
-        280</a> or <a onclick="ga('send', 'event', 'Contact Us', 'Click', 'Sticky Top Bar');" href="#contact">Contact
-        Us</a>
+      <a onclick="gtag('event', 'call_click', {'event_category': 'engagement', 'event_label': 'sticky_top_bar'});"
+        href="tel:+61411797280">Call Us 0411 797 280</a>
+      or
+      <a onclick="gtag('event', 'anchor_click', {'event_category': 'navigation', 'event_label': 'sticky_top_bar_contact_us'});"
+        href="#contact">Contact Us</a>
     </div>
   </div>
   <!-- End Sticky Top Bar -->

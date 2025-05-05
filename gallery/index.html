@@ -114,8 +114,12 @@
         <a href="../assets/images/gallery/pr1_3.jpeg" class="glightbox d-none" data-gallery="project1"
           data-title="Project 1 - Image 3"></a>
         <div class="project-info">
-          <h3><a href="project_1.html" style="text-decoration: none; color: inherit;">Project 1</a></h3>
-          <p>Brief description of Project 1 goes here. Highlighting key features or techniques used.</p>
+          <a href="project_1.html" style="text-decoration: none; color: inherit;">
+            <h3>Contemporary Facade</h3>
+            <p>Executed with precision and care, this project highlights our ongoing dedication to craftsmanship and
+              contemporary
+              design principles.</p>
+          </a>
         </div>
       </div>
 
@@ -133,8 +137,12 @@
         <a href="../assets/images/gallery/pr2_4.jpg" class="glightbox d-none" data-gallery="project2"
           data-title="Project 2 - Image 4"></a>
         <div class="project-info">
-          <h3><a href="project_2.html" style="text-decoration: none; color: inherit;">Project 2</a></h3>
-          <p>Description for Project 2. Mentioning specific challenges or materials involved.</p>
+          <a href="project_2.html" style="text-decoration: none; color: inherit;">
+            <h3>Glen Huntly Rd.</h3>
+            <p>Located in the heart of Caulfield, this boutique development on Glen Huntly Road showcases a bold yet
+              elegant
+              architectural statement.</p>
+          </a>
         </div>
       </div>
 
@@ -152,13 +160,35 @@
         <a href="../assets/images/gallery/pr3_4.jpg" class="glightbox d-none" data-gallery="project3"
           data-title="Project 3 - Image 4"></a>
         <div class="project-info">
-          <h3><a href="project_3.html" style="text-decoration: none; color: inherit;">Project 3</a></h3>
-          <p>Details about Project 3, focusing on the aesthetic outcome or client requirements.</p>
+          <a href="project_3.html" style="text-decoration: none; color: inherit;">
+            <h3>Elwood House</h3>
+            <p>Beautiful outdoor entertaining area on this project we completed a while ago. It's always great to see
+              the
+              finished
+              product come together so nicely.</p>
+          </a>
         </div>
       </div>
 
 
     </div> <!-- /.gallery-grid -->
+
+    <div class="text-center py-5">
+      <!-- <a href="#" class="btn btn-brick btn-lg" data-aos="fade-up" data-aos-delay="200">Get in touch</a> -->
+      <a class="btn btn-brick btn-lg" data-aos="fade-up" data-aos-delay="200" aria-label="Chat on WhatsApp"
+        href="https://wa.me/61411797280/?text=Hey%20Adrian%2C%20just%20came%20across%20your%20website%20and%20keen%20to%20have%20a%20quick%20chat%20about%20a%20project%20we%E2%80%99ve%20got%20in%20mind.%20Feel%20free%20to%20give%20me%20a%20call%20or%20flick%20me%20a%20text%20when%20you%20get%20a%20chance%21"
+        target="_blank" rel="noopener noreferrer"
+        onclick="gtag('event', 'whatsapp_click', {'event_category': 'engagement', 'event_label': 'contact_section'});">
+        <span>Whatsapp Us</span>
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <!-- Secondary Button to Open Modal -->
+      <button type="button" class="btn btn-outline-brick btn-lg ms-lg-3 mt-3 mt-lg-0" data-bs-toggle="modal"
+        data-bs-target="#contactModal" data-aos="fade-up" data-aos-delay="300"
+        onclick="gtag('event', 'generate_lead', {'event_category': 'engagement', 'event_label': 'contact_form_open'});">
+        Contact Us
+      </button>
+    </div>
   </div> <!-- /.container -->
 
   <!-- Footer -->
@@ -206,6 +236,47 @@
       </div>
     </div>
   </footer>
+
+  <!-- Contact Form Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="contactModalLabel">Complete the form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Send us a message and we'll get back to you as soon as possible.</p>
+          <div id="modal-confirmation" class="alert alert-success d-none" role="alert">
+            Thank you! We have received your inquiry and will be in touch soon.
+          </div>
+          <form id="contact-modal-form" action="https://formspree.io/f/mvgapoqq" method="POST">
+            <div class="mb-3">
+              <label for="modalName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="modalName" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="modalPhone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="modalPhone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="modalMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="modalMessage" name="message" rows="4" required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0 justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-brick" id="modal-submit-button" form="contact-modal-form">Send
+            Inquiry</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Form Modal -->
+
+  <!-- Link to external JS file -->
+  <script src="../js/form-handler.js" defer></script>
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
